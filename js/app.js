@@ -1,6 +1,9 @@
-function fizzbuzz(){
+var inputNumber = prompt('Please enter a number');
+var fizzNumber = parseInt(inputNumber);
+
+function fizzbuzz(fizzNumber){
 	var body = document.getElementsByTagName("BODY")[0];
-	for(var i=1; i<101; i++) {
+	for(var i=1; i<=inputNumber; i++) {
 		var p = document.createElement("P");
 		if (i%3 === 0 && i%5 === 0) {
 			console.log("FizzBuzz");
